@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,9 +23,9 @@ public class ButtonInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool down = Input.GetKeyDown(KeyCode.Space);
-        bool held = Input.GetKeyDown(KeyCode.Space);
-        bool up = Input.GetKeyDown(KeyCode.Space);
+        bool down = Input.GetButtonDown("Jump");
+        bool held = Input.GetButtonDown("Jump");
+        bool up = Input.GetButtonDown("Jump");
 
         if (down)
         {
